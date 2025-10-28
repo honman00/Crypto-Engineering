@@ -273,7 +273,7 @@ mod tests {
         let ciphertext = encrypt(mes.clone(), sen_sec, rec_pub);
         let decrypted = decrypt(ciphertext, rec_sec, sen_pub);
 
-        assert_ne!(mes, decrypted);
+        assert_eq!(mes, decrypted);
     }
 
     #[test]
