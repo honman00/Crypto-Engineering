@@ -19,9 +19,6 @@ use x25519_dalek::{PublicKey, StaticSecret};
 /// * `data` - the data of to be saved to file
 ///
 /// # Note
-///
-/// You may **not** change the signature of this function.
-///
 fn save_to_file_as_b64(file_name: &str, data: &[u8]) {
     let encoded_data = BASE64_STANDARD.encode(data);
 
